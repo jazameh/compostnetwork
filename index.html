@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
     <title>CN</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
@@ -11,7 +14,7 @@
             src: url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
         }
         body {
-            background-color: #777;
+            background-color: #000000;
             margin: 0;
             height: 100vh;
             display: flex;
@@ -74,19 +77,23 @@
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1 class="compostbig">Compost Network</h1>
-        <h2 class="compost">MT</h2>
-        <div class="break"></div>
-        <button onclick="redirect('pages/exploits.html')">Exploits</button>
-        <br/>
-        <br/>
-        <button onclick="redirect('pages/bypasses.html')">Bypasses</button>
-        <br/>
-        <br/>
-        <button onclick="redirect('pages/leaks.html')">Leaks</button>
-        <h5 class="compost">credits: nobody :)</h5>
+    <div id="particles-js">
+        <div class="box">
+            <h1 class="compostbig">Compost Network</h1>
+            <h2 class="compost">MT</h2>
+            <div class="break"></div>
+            <button onclick="redirect('pages/exploits.html')">Exploits</button>
+            <br/>
+            <br/>
+            <button onclick="redirect('pages/bypasses.html')">Bypasses</button>
+            <br/>
+            <br/>
+            <button onclick="redirect('pages/leaks.html')">Leaks</button>
+            <h5 class="compost">credits: nobody :)</h5>
+        </div>
     </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script>
         function redirect(url) {
             window.location.href = url;
