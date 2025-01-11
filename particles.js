@@ -49,7 +49,7 @@ var pJS = function(tag_id, params){
           random: false,
           anim: {
             enable: false,
-            speed: 2,
+            speed: 8,
             opacity_min: 0,
             sync: false
           }
@@ -65,10 +65,10 @@ var pJS = function(tag_id, params){
           }
         },
         line_linked: {
-          enable: true,
+          enable: false,
           distance: 100,
           color: '#fff',
-          opacity: 1,
+          opacity: 0,
           width: 1
         },
         move: {

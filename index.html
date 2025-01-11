@@ -14,7 +14,7 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
             src: url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
         }
         body {
-            background-color: #000000;
+            background: linear-gradient(rgb(18, 120, 122), rgba(0, 0, 0, 1));
             margin: 0;
             height: 100vh;
             display: flex;
@@ -35,10 +35,8 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
         .box {
             padding: 20px;
             border-radius: 10px;
-            animation: anim 10s linear infinite;
-            opacity: 1; 
-            border: 1px solid #555;
-            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            background: linear-gradient(rgba(0, 0, 0, 0.443), rgb(0, 0, 0, 0.443));
         }
         @keyframes anim {
             0% {
@@ -89,18 +87,18 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
     </style>
 </head>
 <body>
-    <div id="particles-js"></div> <!-- edit particles in app.js, not particles.js or particles.json -->
+    <div id="particles-js"></div>
     <div class="box">
         <h1 class="compostbig">Compost Network</h1>
         <h2 class="compost">MT</h2>
         <div class="break"></div>
-        <button onclick="redirect('pages/exploits')">Exploits</button>
+        <button onclick="redirect('pages/exploits.html')">Exploits</button>
         <br/>
         <br/>
-        <button onclick="redirect('pages/bypasses')">Bypasses</button>
+        <button onclick="redirect('pages/bypasses.html')">Bypasses</button>
         <br/>
         <br/>
-        <button onclick="redirect('pages/leaks')">Leaks</button>
+        <button onclick="redirect('pages/leaks.html')">Leaks</button>
         <h5 class="compost">credits: nobody :)</h5>
     </div>
     <script src="particles.js"></script>
