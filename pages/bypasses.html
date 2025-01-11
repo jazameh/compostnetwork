@@ -6,17 +6,12 @@
     <title>CN - Bypasses</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
         @font-face {
             font-family: "Jersey 15";
             src: url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
         }
-        @font-face {
-            font-family: "Lato";
-            src: url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-        }
         body {
-            background-color: #777;
+            background: linear-gradient(rgb(18, 120, 122), rgba(0, 0, 0, 1));
             margin: 0;
             height: 100vh;
             display: flex;
@@ -34,17 +29,11 @@
             color: rgb(180, 180, 180);
             letter-spacing: 5px;
         }
-        .compostcaption {
-            font-family: "Lato";
-            color: rgb(180, 180, 180);
-        }
         .box {
             padding: 20px;
             border-radius: 10px;
-            animation: anim 10s linear infinite;
-            opacity: 1; 
-            border: 1px solid #555;
-            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            background: linear-gradient(rgba(0, 0, 0, 0.443), rgb(0, 0, 0, 0.443));
         }
         @keyframes anim {
             0% {
@@ -80,9 +69,22 @@
             background-color: #666;
             transition: 0.3s ease;
         }
+        #particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: var(--bg-c);
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+  overflow: hidden;
+  z-index: -1;
+}
     </style>
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="box">
         <h1 class="compostbig">Compost Network</h1>
         <h2 class="compost">Bypasses</h2>
@@ -90,6 +92,8 @@
         <h3 class="compost">FortiGuard Bypass</h3>
         <h4 class="compostcaption">Use the same password from the EP Student Mobile (theschoolsofeastporter) and use it for EP Staff Mobile</h4>
     </div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script>
         function redirect(url) {
             window.location.href = url;
